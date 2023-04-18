@@ -283,6 +283,7 @@
     <Content Include="ExemploDiagrama\Diagrama em branco.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Eventos\NewFolder1\" />
     <Folder Include="XML\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
