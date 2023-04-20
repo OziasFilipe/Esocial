@@ -11,6 +11,7 @@ namespace BibliotecaEsocial.Eventos.S2190
 {
     class S2190
     {
+        //Instancias do Modelo do evento.
         private eSocial esocial = new eSocial();
         private eSocialEvtAdmPrelim AdmPrelim = new eSocialEvtAdmPrelim();
         private T_ideEmpregador IdeEmpregador = new T_ideEmpregador();
@@ -35,22 +36,22 @@ namespace BibliotecaEsocial.Eventos.S2190
         public bool natAtividadeSpecified = false;
         public sbyte natAtividade = 0;
 
+
+        // Metodo responsavel por chamar o evento 2190 e serializar para XML os dados enviado pelos atraibutos publicos.
+        // Esse metodo gera o XML de acordo com o formato passado a ele, depois preenche com as informações dos atributos publicos que estão fora do metodo.
         public void S_2190()
         {
             this.AdmPrelim.Id = this.id;
             this.AdmPrelim.ideEmpregador = this.IdeEmpregador;
             this.AdmPrelim.ideEvento = this.IdeEventoTrabAdmissao;
             this.AdmPrelim.infoRegPrelim = this.AdmPrelimInfoRegPrelim;
-
             this.IdeEmpregador.nrInsc = this.nrInsc;
             this.IdeEmpregador.tpInsc = this.tpInsc;
-
             this.IdeEventoTrabAdmissao.nrRecibo = this.nrRecibo;
             this.IdeEventoTrabAdmissao.indRetif = this.indRetif;
             this.IdeEventoTrabAdmissao.procEmi = this.procEmi;
             this.IdeEventoTrabAdmissao.tpAmb = this.tpAmb;
             this.IdeEventoTrabAdmissao.verProc = this.verProc;
-
             this.AdmPrelimInfoRegPrelim.codCateg = this.codCateg;
             this.AdmPrelimInfoRegPrelim.cpfTrab = this.cpfTrab;
             this.AdmPrelimInfoRegPrelim.dtAdm = this.dtAdm;
@@ -63,7 +64,6 @@ namespace BibliotecaEsocial.Eventos.S2190
             //Serializar Objeto em XML 
             XmlSerializer xml = new XmlSerializer(typeof(eSocialEvtAdmPrelim));
             xml.Serialize(Console.Out, this.AdmPrelim);
-
             Console.ReadLine();
         }
     }
