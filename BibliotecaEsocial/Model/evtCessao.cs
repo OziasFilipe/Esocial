@@ -230,20 +230,39 @@ public partial class T_ideEmpregador_cnpj {
 
 public partial class eSocialEvtCessaoInfoCessao {
     
-    private object itemField;
-    
+    private object fimCessao;
+    private object iniCessao;
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("fimCessao", typeof(eSocialEvtCessaoInfoCessaoFimCessao))]
-    [System.Xml.Serialization.XmlElementAttribute("iniCessao", typeof(eSocialEvtCessaoInfoCessaoIniCessao))]
-    public object Item {
-        get {
-            return this.itemField;
+    [System.Xml.Serialization.XmlElementAttribute("MyFimCessao", typeof(eSocialEvtCessaoInfoCessaoFimCessao))]
+    [System.Xml.Serialization.XmlElementAttribute("MyIniCessao", typeof(eSocialEvtCessaoInfoCessaoIniCessao))]
+   
+    [XmlElement("fimCessao")]
+        public object FimCessao
+    {
+        get
+        {
+            return this.fimCessao;
         }
-        set {
-            this.itemField = value;
+        set
+        {
+            this.fimCessao = value;
         }
     }
-}
+        [XmlElement("iniCessao")]
+        public object IniCessao
+    {
+        get
+        {
+            return this.iniCessao;
+        }
+        set
+        {
+            this.iniCessao = value;
+        }
+    }
+
+    }
 
 public partial class eSocialEvtCessaoInfoCessaoFimCessao {
     
