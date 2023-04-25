@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
 using BibliotecaEsocial.ClassesEsquemas;
+using BibliotecaEsocial.Eventos.S1010;
 using BibliotecaEsocial.Eventos.S2190;
+using BibliotecaEsocial.Eventos.S2206;
+using BibliotecaEsocial.Eventos.S2210;
+using BibliotecaEsocial.Eventos.S2220;
+using BibliotecaEsocial.Eventos.S2230;
+using BibliotecaEsocial.Eventos.S2231;
+using BibliotecaEsocial.Eventos.S2240;
+using BibliotecaEsocial.Eventos.S2298;
+using BibliotecaEsocial.Eventos.S2300;
+using BibliotecaEsocial.Eventos.S2306;
 using BibliotecaEsocial.Validacao;
 
 
@@ -16,18 +26,9 @@ namespace BibliotecaEsocial
     {
         static void Main(string[] args)
         {
-            // S2200 s2200 = new S2200();
-            // s2200.tContato.emailPrinc = "ozias.pecanhaa@gmail.com";
-            // s2200.tContato.fonePrinc = "";
-            // s2200.S_2200();
 
-            S2190 s2190 = new S2190();
-            s2190.matricula = "Matricula";
-            s2190.S_2190();
-            // s2200.admissaoVinculoMudancaCpf = 
-
-
-
+            S2306 teste = new S2306();
+            teste.s2306();
 
         }
     }
