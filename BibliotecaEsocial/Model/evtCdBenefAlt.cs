@@ -646,19 +646,45 @@ public enum TS_incFisMen {
 public partial class eSocialEvtCdBenefAltAlteracaoDadosBenefEndereco {
     
     private object itemField;
+    private object Brasil;
+    private object Exterior;
     
-    /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("brasil", typeof(T_endereco_brasil))]
-    [System.Xml.Serialization.XmlElementAttribute("exterior", typeof(T_endereco_exterior))]
-    public object Item {
-        get {
+
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("myBrasil", typeof(T_endereco_brasil))]
+    [System.Xml.Serialization.XmlElementAttribute("myExterior", typeof(T_endereco_exterior))]
+    public object Item
+    {
+        get
+        {
             return this.itemField;
         }
-        set {
+        set
+        {
             this.itemField = value;
         }
     }
-}
+        public object brasil {
+        get {
+            return this.Brasil;
+        }
+        set {
+            this.Brasil = value;
+        }
+    }
+    public object exterior
+    {
+        get
+        {
+            return this.Exterior;
+        }
+        set
+        {
+            this.Exterior = value;
+        }
+    }
+    }
 
 
 public partial class eSocialEvtCdBenefAltAlteracaoDadosBenefDependente {
