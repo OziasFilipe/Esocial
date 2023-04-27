@@ -486,7 +486,6 @@ public partial class T_ideLotacao {
 public partial class T_ideEmpregador {
     
     private sbyte tpInscField;
-    
     private string nrInscField;
     
     /// <remarks/>
@@ -511,19 +510,18 @@ public partial class T_ideEmpregador {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.esocial.gov.br/schema/evt/evtTabLotacao/v_S_01_00_00")]
+
 public partial class eSocialEvtTabLotacaoInfoLotacao {
     
     private object itemField;
-    
+    private object Alteracao;
+    private object Exclusao;
+    private object Inclusao;
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("alteracao", typeof(eSocialEvtTabLotacaoInfoLotacaoAlteracao))]
-    [System.Xml.Serialization.XmlElementAttribute("exclusao", typeof(eSocialEvtTabLotacaoInfoLotacaoExclusao))]
-    [System.Xml.Serialization.XmlElementAttribute("inclusao", typeof(eSocialEvtTabLotacaoInfoLotacaoInclusao))]
+        [System.Xml.Serialization.XmlElementAttribute("myAlteracao", typeof(eSocialEvtTabLotacaoInfoLotacaoAlteracao))]
+    [System.Xml.Serialization.XmlElementAttribute("myExclusao", typeof(eSocialEvtTabLotacaoInfoLotacaoExclusao))]
+    [System.Xml.Serialization.XmlElementAttribute("myInclusao", typeof(eSocialEvtTabLotacaoInfoLotacaoInclusao))]
     public object Item {
         get {
             return this.itemField;
@@ -532,14 +530,42 @@ public partial class eSocialEvtTabLotacaoInfoLotacao {
             this.itemField = value;
         }
     }
-}
+    public object alteracao
+        {
+        get
+        {
+            return this.Alteracao;
+        }
+        set
+        {
+            this.Alteracao = value;
+        }
+    }
+    public object exclusao
+        {
+        get
+        {
+            return this.Exclusao;
+        }
+        set
+        {
+            this.Exclusao = value;
+        }
+    }
+    public object inclusao
+        {
+        get
+        {
+            return this.Inclusao;
+        }
+        set
+        {
+            this.Inclusao = value;
+        }
+    }
+    }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.esocial.gov.br/schema/evt/evtTabLotacao/v_S_01_00_00")]
 public partial class eSocialEvtTabLotacaoInfoLotacaoAlteracao {
     
     private T_ideLotacao ideLotacaoField;
@@ -580,11 +606,6 @@ public partial class eSocialEvtTabLotacaoInfoLotacaoAlteracao {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.esocial.gov.br/schema/evt/evtTabLotacao/v_S_01_00_00")]
 public partial class eSocialEvtTabLotacaoInfoLotacaoExclusao {
     
     private T_ideLotacao ideLotacaoField;
@@ -601,11 +622,7 @@ public partial class eSocialEvtTabLotacaoInfoLotacaoExclusao {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.esocial.gov.br/schema/evt/evtTabLotacao/v_S_01_00_00")]
+
 public partial class eSocialEvtTabLotacaoInfoLotacaoInclusao {
     
     private T_ideLotacao ideLotacaoField;

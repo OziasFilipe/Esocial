@@ -703,11 +703,14 @@ public partial class T_ideEmpregador {
 public partial class eSocialEvtTabRubricaInfoRubrica {
     
     private object itemField;
-    
+    private object Alteracao;
+    private object Exclusao;
+    private object Inclusao;
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("alteracao", typeof(eSocialEvtTabRubricaInfoRubricaAlteracao))]
-    [System.Xml.Serialization.XmlElementAttribute("exclusao", typeof(eSocialEvtTabRubricaInfoRubricaExclusao))]
-    [System.Xml.Serialization.XmlElementAttribute("inclusao", typeof(eSocialEvtTabRubricaInfoRubricaInclusao))]
+        [System.Xml.Serialization.XmlElementAttribute("myAlteracao", typeof(eSocialEvtTabRubricaInfoRubricaAlteracao))]
+    [System.Xml.Serialization.XmlElementAttribute("myExclusao", typeof(eSocialEvtTabRubricaInfoRubricaExclusao))]
+    [System.Xml.Serialization.XmlElementAttribute("myInclusao", typeof(eSocialEvtTabRubricaInfoRubricaInclusao))]
     public object Item {
         get {
             return this.itemField;
@@ -716,7 +719,40 @@ public partial class eSocialEvtTabRubricaInfoRubrica {
             this.itemField = value;
         }
     }
-}
+    public object alteracao
+        {
+        get
+        {
+            return this.Alteracao;
+        }
+        set
+        {
+            this.Alteracao = value;
+        }
+    }
+    public object exclusao
+        {
+        get
+        {
+            return this.Exclusao;
+        }
+        set
+        {
+            this.Exclusao = value;
+        }
+    }
+    public object inclusao
+        {
+        get
+        {
+            return this.Inclusao;
+        }
+        set
+        {
+            this.Inclusao = value;
+        }
+    }
+    }
 
 
 public partial class eSocialEvtTabRubricaInfoRubricaAlteracao {

@@ -1099,10 +1099,12 @@ public enum TS_grauInstr {
 public partial class eSocialEvtTSVInicioTrabalhadorEndereco {
     
     private object itemField;
-    
+    private object Brasil;
+    private object Exterior;
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("brasil", typeof(T_endereco_brasil))]
-    [System.Xml.Serialization.XmlElementAttribute("exterior", typeof(T_endereco_exterior))]
+        [System.Xml.Serialization.XmlElementAttribute("MyBrasil", typeof(T_endereco_brasil))]
+    [System.Xml.Serialization.XmlElementAttribute("MyExterior", typeof(T_endereco_exterior))]
     public object Item {
         get {
             return this.itemField;
@@ -1111,7 +1113,29 @@ public partial class eSocialEvtTSVInicioTrabalhadorEndereco {
             this.itemField = value;
         }
     }
-}
+    public object brasil
+    {
+        get
+        {
+            return this.Brasil;
+        }
+        set
+        {
+            this.Brasil = value;
+        }
+    }
+    public object exterior
+    {
+        get
+        {
+            return this.Exterior;
+        }
+        set
+        {
+            this.Exterior = value;
+        }
+    }
+    }
 
 
 public partial class eSocialEvtTSVInicioTrabalhadorTrabImig {

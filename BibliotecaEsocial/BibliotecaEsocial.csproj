@@ -44,6 +44,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Eventos\S1005\S1005.cs" />
+    <Compile Include="Eventos\S1010\S1010.cs" />
+    <Compile Include="Eventos\S1020\S1020.cs" />
+    <Compile Include="Eventos\S1200\S1200.cs" />
+    <Compile Include="Eventos\S2206\S2206.cs" />
+    <Compile Include="Eventos\S2210\S2210.cs" />
+    <Compile Include="Eventos\S2220\S2220.cs" />
+    <Compile Include="Eventos\S2231\S2231.cs" />
+    <Compile Include="Eventos\S2240\S2240.cs" />
+    <Compile Include="Eventos\S2298\S2298.cs" />
+    <Compile Include="Eventos\S2299\S2299.cs" />
+    <Compile Include="Eventos\S2300\S2300.cs" />
+    <Compile Include="Eventos\S2306\S2306.cs" />
+    <Compile Include="Eventos\S2399\S2399.cs" />
+    <Compile Include="Eventos\S2400\S2400.cs" />
+    <Compile Include="Eventos\S2405\S2405.cs" />
+    <Compile Include="Eventos\S2410\S2410.cs" />
+    <Compile Include="Eventos\S2416\S2416.cs" />
+    <Compile Include="Eventos\S2418\S2418.cs" />
+    <Compile Include="Eventos\S2420\S2420.cs" />
+    <Compile Include="Eventos\S2500\S2500.cs" />
+    <Compile Include="Eventos\S3000\S3000.cs" />
+    <Compile Include="Eventos\S8299\S8299.cs" />
     <Compile Include="Model\evtAdmissao.cs" />
     <Compile Include="Model\evtAdmPrelim.cs" />
     <Compile Include="Model\evtAfastTemp.cs" />

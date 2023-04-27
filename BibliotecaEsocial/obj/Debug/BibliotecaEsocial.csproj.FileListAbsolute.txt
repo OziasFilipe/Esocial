@@ -6,3 +6,11 @@ C:\Users\ozias.filipe\Documents\GitHub\eSocial\BibliotecaEsocial\bin\Debug\Bibli
 C:\Users\ozias.filipe\Documents\GitHub\eSocial\BibliotecaEsocial\bin\Debug\BibliotecaEsocial.pdb
 C:\Users\ozias.filipe\Documents\GitHub\eSocial\BibliotecaEsocial\obj\Debug\BibliotecaEsocial.exe
 C:\Users\ozias.filipe\Documents\GitHub\eSocial\BibliotecaEsocial\obj\Debug\BibliotecaEsocial.pdb
+C:\Users\Desenvolvimento\Documents\GitHub\eSocial\BibliotecaEsocial\bin\Debug\BibliotecaEsocial.exe.config
+C:\Users\Desenvolvimento\Documents\GitHub\eSocial\BibliotecaEsocial\bin\Debug\BibliotecaEsocial.exe
+C:\Users\Desenvolvimento\Documents\GitHub\eSocial\BibliotecaEsocial\bin\Debug\BibliotecaEsocial.pdb
+C:\Users\Desenvolvimento\Documents\GitHub\eSocial\BibliotecaEsocial\obj\Debug\BibliotecaEsocial.csproj.AssemblyReference.cache
+C:\Users\Desenvolvimento\Documents\GitHub\eSocial\BibliotecaEsocial\obj\Debug\BibliotecaEsocial.csproj.SuggestedBindingRedirects.cache
+C:\Users\Desenvolvimento\Documents\GitHub\eSocial\BibliotecaEsocial\obj\Debug\BibliotecaEsocial.csproj.CoreCompileInputs.cache
+C:\Users\Desenvolvimento\Documents\GitHub\eSocial\BibliotecaEsocial\obj\Debug\BibliotecaEsocial.exe
+C:\Users\Desenvolvimento\Documents\GitHub\eSocial\BibliotecaEsocial\obj\Debug\BibliotecaEsocial.pdb

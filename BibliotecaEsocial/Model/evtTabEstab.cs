@@ -605,22 +605,62 @@ public partial class T_ideEmpregador {
 
 
 public partial class eSocialEvtTabEstabInfoEstab {
-    
+
     private object itemField;
-    
+    private object Alteracao;
+    private object Exclusao;
+    private object Inclusao;
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("alteracao", typeof(eSocialEvtTabEstabInfoEstabAlteracao))]
-    [System.Xml.Serialization.XmlElementAttribute("exclusao", typeof(eSocialEvtTabEstabInfoEstabExclusao))]
-    [System.Xml.Serialization.XmlElementAttribute("inclusao", typeof(eSocialEvtTabEstabInfoEstabInclusao))]
-    public object Item {
-        get {
+    [System.Xml.Serialization.XmlElementAttribute("myAlteracao", typeof(eSocialEvtTabEstabInfoEstabAlteracao))]
+    [System.Xml.Serialization.XmlElementAttribute("myExclusao", typeof(eSocialEvtTabEstabInfoEstabExclusao))]
+    [System.Xml.Serialization.XmlElementAttribute("myInclusao", typeof(eSocialEvtTabEstabInfoEstabInclusao))]
+
+    public object Item
+    {
+        get
+        {
             return this.itemField;
         }
-        set {
+        set
+        {
             this.itemField = value;
         }
     }
-}
+        public object alteracao
+    {
+        get
+        {
+            return this.Alteracao;
+        }
+        set
+        {
+            this.Alteracao = value;
+        }
+    }
+    public object exclusao
+    {
+        get
+        {
+            return this.Exclusao;
+        }
+        set
+        {
+            this.Exclusao = value;
+        }
+    }
+    public object inclusao
+    {
+        get
+        {
+            return this.Inclusao;
+        }
+        set
+        {
+            this.Inclusao = value;
+        }
+    }
+    }
 
 
 public partial class eSocialEvtTabEstabInfoEstabAlteracao {
