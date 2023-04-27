@@ -584,20 +584,54 @@ public partial class T_ideEmpregador {
 public partial class eSocialEvtTabProcessoInfoProcesso {
     
     private object itemField;
-    
+    private object Alteracao;
+    private object Exclusao;
+    private object Inclusao;
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("alteracao", typeof(eSocialEvtTabProcessoInfoProcessoAlteracao))]
-    [System.Xml.Serialization.XmlElementAttribute("exclusao", typeof(eSocialEvtTabProcessoInfoProcessoExclusao))]
-    [System.Xml.Serialization.XmlElementAttribute("inclusao", typeof(eSocialEvtTabProcessoInfoProcessoInclusao))]
-    public object Item {
-        get {
-            return this.itemField;
+    [System.Xml.Serialization.XmlElementAttribute("myalteracao", typeof(eSocialEvtTabProcessoInfoProcessoAlteracao))]
+    [System.Xml.Serialization.XmlElementAttribute("myexclusao", typeof(eSocialEvtTabProcessoInfoProcessoExclusao))]
+    [System.Xml.Serialization.XmlElementAttribute("myinclusao", typeof(eSocialEvtTabProcessoInfoProcessoInclusao))]
+    public object Item
+    {
+        get { return this.itemField; }
+        set { this.itemField = value; }
+    }
+
+    public object alteracao
+        {
+        get
+        {
+            return this.Alteracao;
         }
-        set {
-            this.itemField = value;
+        set
+        {
+            this.Alteracao = value;
         }
     }
-}
+    public object exclusao
+        {
+        get
+        {
+            return this.Exclusao;
+        }
+        set
+        {
+            this.Exclusao = value;
+        }
+    }
+    public object inclusao
+        {
+        get
+        {
+            return this.Inclusao;
+        }
+        set
+        {
+            this.Inclusao = value;
+        }
+    }
+    }
 
 
 public partial class eSocialEvtTabProcessoInfoProcessoAlteracao {

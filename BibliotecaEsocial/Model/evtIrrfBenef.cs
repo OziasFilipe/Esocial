@@ -28,15 +28,14 @@ namespace BibliotecaEsocial.Model.S5002
         Namespace = "http://www.esocial.gov.br/schema/evt/evtIrrfBenef/v_S_01_00_00", IsNullable = false)]
     public partial class eSocial
     {
-
         private eSocialEvtIrrfBenef evtIrrfBenefField;
-
         /// <remarks/>
         public eSocialEvtIrrfBenef evtIrrfBenef
         {
             get { return this.evtIrrfBenefField; }
             set { this.evtIrrfBenefField = value; }
         }
+       
     }
 
     /// <remarks/>

@@ -44,9 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Eventos\S1000\S1000.cs" />
     <Compile Include="Eventos\S1005\S1005.cs" />
     <Compile Include="Eventos\S1010\S1010.cs" />
     <Compile Include="Eventos\S1020\S1020.cs" />
+    <Compile Include="Eventos\S1070\S1070.cs" />
     <Compile Include="Eventos\S1200\S1200.cs" />
     <Compile Include="Eventos\S2206\S2206.cs" />
     <Compile Include="Eventos\S2210\S2210.cs" />
@@ -66,6 +68,8 @@
     <Compile Include="Eventos\S2420\S2420.cs" />
     <Compile Include="Eventos\S2500\S2500.cs" />
     <Compile Include="Eventos\S3000\S3000.cs" />
+    <Compile Include="Eventos\S5001\S5001.cs" />
+    <Compile Include="Eventos\S5002\S5002.cs" />
     <Compile Include="Eventos\S8299\S8299.cs" />
     <Compile Include="Model\evtAdmissao.cs" />
     <Compile Include="Model\evtAdmPrelim.cs" />
