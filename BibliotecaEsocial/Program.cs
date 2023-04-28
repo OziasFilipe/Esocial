@@ -31,6 +31,7 @@ using BibliotecaEsocial.Eventos.S5001;
 using BibliotecaEsocial.Eventos.S5002;
 using BibliotecaEsocial.Eventos.S5003;
 using BibliotecaEsocial.Eventos.S5011;
+using BibliotecaEsocial.Eventos.S5012;
 using BibliotecaEsocial.Eventos.S5013;
 using BibliotecaEsocial.Validacao;
 
@@ -42,8 +43,8 @@ namespace BibliotecaEsocial
         static void Main(string[] args)
         {
 
-            S5013 teste = new S5013();
-            teste.s5013();
+            S5012 teste = new S5012();
+            teste.s5012();
 
         }
     }
