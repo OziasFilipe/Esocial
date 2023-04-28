@@ -56,7 +56,6 @@
     <Compile Include="Eventos\S2231\S2231.cs" />
     <Compile Include="Eventos\S2240\S2240.cs" />
     <Compile Include="Eventos\S2298\S2298.cs" />
-    <Compile Include="Eventos\S2299\S2299.cs" />
     <Compile Include="Eventos\S2300\S2300.cs" />
     <Compile Include="Eventos\S2306\S2306.cs" />
     <Compile Include="Eventos\S2399\S2399.cs" />
@@ -70,6 +69,9 @@
     <Compile Include="Eventos\S3000\S3000.cs" />
     <Compile Include="Eventos\S5001\S5001.cs" />
     <Compile Include="Eventos\S5002\S5002.cs" />
+    <Compile Include="Eventos\S5003\S5003.cs" />
+    <Compile Include="Eventos\S5011\S5011.cs" />
+    <Compile Include="Eventos\S5013\S5013.cs" />
     <Compile Include="Eventos\S8299\S8299.cs" />
     <Compile Include="Model\evtAdmissao.cs" />
     <Compile Include="Model\evtAdmPrelim.cs" />
@@ -90,7 +92,6 @@
     <Compile Include="Model\evtComProd.cs" />
     <Compile Include="Model\evtContratAvNP.cs" />
     <Compile Include="Model\evtCS.cs" />
-    <Compile Include="Model\evtDeslig.cs" />
     <Compile Include="Model\evtExpRisco.cs" />
     <Compile Include="Model\evtFechaEvPer.cs" />
     <Compile Include="Model\evtFGTS.cs" />
