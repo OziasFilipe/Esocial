@@ -12,6 +12,7 @@ namespace BibliotecaEsocial.Eventos.S1020
 {
     class S1020
     {
+        private eSocial eSocialEvt = new eSocial();
         private eSocialEvtTabLotacao evtTabLotacao = new eSocialEvtTabLotacao();
         private T_ideEvento_evtTab t_ideEvento = new T_ideEvento_evtTab();
         private T_ideEmpregador t_ideEmpregador = new T_ideEmpregador();
@@ -39,6 +40,9 @@ namespace BibliotecaEsocial.Eventos.S1020
         private string nrProcJud = string.Empty;
         public void s1020()
         {
+           this.eSocialEvt = this.eSocialEvt;
+            this.eSocialEvt.evtTabLotacao = this.evtTabLotacao; 
+
             this.evtTabLotacao.Id = this.id;
             this.evtTabLotacao.ideEvento = this.t_ideEvento;
             this.evtTabLotacao.ideEmpregador = this.t_ideEmpregador;

@@ -78,7 +78,11 @@ namespace BibliotecaEsocial.Eventos.S1200
             this.infoInterm[0].dia = this.dia;
 
             this.evtRemun.dmDev = this.dmDev;
+            this.dmDev[0] = new eSocialEvtRemunDmDev();
+
             this.dmDev[0].ideDmDev = this.ideDmDev;
+            // this.dmDev[0]
+            
 
 
 

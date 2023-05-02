@@ -10,6 +10,7 @@ namespace BibliotecaEsocial.Eventos.S2300
 {
     class S2300
     {
+        private eSocial eSocialEvt = new eSocial();
         private eSocialEvtTSVInicio evtTsvInicio = new eSocialEvtTSVInicio();
         private T_ideEmpregador t_ideEmpregador = new T_ideEmpregador();
         private T_ideEvento_trab t_ideEvento = new T_ideEvento_trab();
@@ -76,6 +77,8 @@ namespace BibliotecaEsocial.Eventos.S2300
 
         public void s2300()
         {
+            this.eSocialEvt = this.eSocialEvt;
+            this.eSocialEvt.evtTSVInicio = this.evtTsvInicio;
             this.evtTsvInicio.Id = this.id;
             this.evtTsvInicio.ideEmpregador = this.t_ideEmpregador;
             this.evtTsvInicio.ideEvento = this.t_ideEvento;
@@ -125,8 +128,8 @@ namespace BibliotecaEsocial.Eventos.S2300
             this.infoTsvInicio.termino = this.termino;
 
 
-            XmlSerializer xml = new XmlSerializer(typeof(eSocialEvtTSVInicio));
-            xml.Serialize(Console.Out, evtTsvInicio);
+            XmlSerializer xml = new XmlSerializer(typeof(eSocial));
+            xml.Serialize(Console.Out, eSocialEvt);
             Console.ReadLine();
 
 

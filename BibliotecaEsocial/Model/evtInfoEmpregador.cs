@@ -454,6 +454,40 @@ namespace BibliotecaEsocial.Model.S1000
         }
     }
 
+    public partial class T_novaValidade
+    {
+
+        private string iniValidField;
+
+        private string fimValidField;
+
+        /// <remarks/>
+        public string iniValid
+        {
+            get
+            {
+                return this.iniValidField;
+            }
+            set
+            {
+                this.iniValidField = value;
+            }
+        }
+
+        /// <remarks/>
+        public string fimValid
+        {
+            get
+            {
+                return this.fimValidField;
+            }
+            set
+            {
+                this.fimValidField = value;
+            }
+        }
+    }
+
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
     [System.SerializableAttribute()]
@@ -494,28 +528,41 @@ namespace BibliotecaEsocial.Model.S1000
     {
 
         private object itemField;
+        private object Alteracao;
+        private object Exclusao;
+        private object Inclusao;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("alteracao",
+        [System.Xml.Serialization.XmlElementAttribute("myAlteracao",
             typeof(eSocialEvtInfoEmpregadorInfoEmpregadorAlteracao))]
-        [System.Xml.Serialization.XmlElementAttribute("exclusao",
+        [System.Xml.Serialization.XmlElementAttribute("myExclusao",
             typeof(eSocialEvtInfoEmpregadorInfoEmpregadorExclusao))]
-        [System.Xml.Serialization.XmlElementAttribute("inclusao",
+        [System.Xml.Serialization.XmlElementAttribute("myInclusao",
             typeof(eSocialEvtInfoEmpregadorInfoEmpregadorInclusao))]
         public object Item
         {
             get { return this.itemField; }
             set { this.itemField = value; }
         }
+        public object alteracao
+        {
+            get { return this.Alteracao; }
+            set { this.Alteracao = value; }
+        }
+        public object exclusao
+        {
+            get { return this.Exclusao; }
+            set { this.Exclusao = value; }
+        }
+        public object inclusao
+        {
+            get { return this.Inclusao; }
+            set { this.Inclusao = value; }
+        }
     }
 
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true,
-        Namespace = "http://www.esocial.gov.br/schema/evt/evtInfoEmpregador/v_S_01_00_00")]
+
     public partial class eSocialEvtInfoEmpregadorInfoEmpregadorAlteracao
     {
 
@@ -523,7 +570,7 @@ namespace BibliotecaEsocial.Model.S1000
 
         private T_infoCadastro infoCadastroField;
 
-        private T_idePeriodo novaValidadeField;
+        private T_novaValidade novaValidadeField;
 
         /// <remarks/>
         public T_idePeriodo idePeriodo
@@ -540,7 +587,7 @@ namespace BibliotecaEsocial.Model.S1000
         }
 
         /// <remarks/>
-        public T_idePeriodo novaValidade
+        public T_novaValidade novaValidade
         {
             get { return this.novaValidadeField; }
             set { this.novaValidadeField = value; }
@@ -548,12 +595,7 @@ namespace BibliotecaEsocial.Model.S1000
     }
 
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true,
-        Namespace = "http://www.esocial.gov.br/schema/evt/evtInfoEmpregador/v_S_01_00_00")]
+ 
     public partial class eSocialEvtInfoEmpregadorInfoEmpregadorExclusao
     {
 
@@ -568,12 +610,7 @@ namespace BibliotecaEsocial.Model.S1000
     }
 
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.8.3928.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true,
-        Namespace = "http://www.esocial.gov.br/schema/evt/evtInfoEmpregador/v_S_01_00_00")]
+    
     public partial class eSocialEvtInfoEmpregadorInfoEmpregadorInclusao
     {
 

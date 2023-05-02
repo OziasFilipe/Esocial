@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BibliotecaEsocial.Eventos.S3000;
+using BibliotecaEsocial.Model.S3500;
 
 namespace BibliotecaEsocial.Eventos.S3000
 // falta criar o modelo.
+
 {
     class S3000
     {
+        
         //private T_ideEmpregador t_ideEmpregador = new T_ideEmpregador();
         //private T_ideEvento_trab t_ideEvento = new T_ideEvento_trab();
         private string id = string.Empty;

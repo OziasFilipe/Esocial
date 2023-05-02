@@ -11,6 +11,7 @@ namespace BibliotecaEsocial.Eventos.S1010
 {
     class S1010
     {
+        private eSocial eSocialEvt = new eSocial();
         private eSocialEvtTabRubrica evtTabRubrica = new eSocialEvtTabRubrica();
         private T_ideEmpregador t_ideEmpregador = new T_ideEmpregador();
         private T_ideEvento_evtTab t_ideEvento_evtTab = new T_ideEvento_evtTab();
@@ -41,6 +42,9 @@ namespace BibliotecaEsocial.Eventos.S1010
 
         public void s1010()
         {
+            this.eSocialEvt = this.eSocialEvt;
+            this.eSocialEvt.evtTabRubrica = this.evtTabRubrica;
+
             this.evtTabRubrica.ideEmpregador = this.t_ideEmpregador;
             this.evtTabRubrica.ideEvento = this.t_ideEvento_evtTab;
             this.evtTabRubrica.infoRubrica = this.infoRubrica;

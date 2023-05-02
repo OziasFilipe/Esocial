@@ -10,6 +10,7 @@ namespace BibliotecaEsocial.Eventos.S1005
 {
     class S1005
     {
+        private eSocial eSocialEvt = new eSocial();
         private eSocialEvtTabEstab evtTabEstab = new eSocialEvtTabEstab();
         private eSocialEvtTabEstabInfoEstab infoEstab = new eSocialEvtTabEstabInfoEstab();
         private T_ideEmpregador t_ideEmpregador = new T_ideEmpregador();
@@ -47,6 +48,8 @@ namespace BibliotecaEsocial.Eventos.S1005
 
         public void s1005()
         {
+            this.eSocialEvt = this.eSocialEvt;
+            this.eSocialEvt.evtTabEstab = this.evtTabEstab;
             this.evtTabEstab.Id = this.id;
             this.evtTabEstab.ideEmpregador = this.t_ideEmpregador;
             this.evtTabEstab.infoEstab = this.infoEstab;

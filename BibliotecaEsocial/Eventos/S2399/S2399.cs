@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,7 @@ namespace BibliotecaEsocial.Eventos.S2399
         private string codCateg = string.Empty;
         private string cpfTrab = string.Empty;
         private DateTime dtTerm = DateTime.Now;
+        private string ideDmDev = string.Empty;
         public void s2399()
         {
             this.evtTsvTermino.Id = this.id;
@@ -52,8 +54,9 @@ namespace BibliotecaEsocial.Eventos.S2399
             this.infoTsvTermino.verbasResc = this.verbasResc;
 
             this.verbasResc.dmDev = this.dmDev;
-            this.dmDev[0].ideDmDev = "";
-            
+            this.dmDev[0] = new eSocialEvtTSVTerminoInfoTSVTerminoVerbasRescDmDev();
+
+            this.dmDev[0].ideDmDev = this.ideDmDev;
             // resolver; 
         }
     }

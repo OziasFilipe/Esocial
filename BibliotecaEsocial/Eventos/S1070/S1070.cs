@@ -10,6 +10,7 @@ namespace BibliotecaEsocial.Eventos.S1070
 {
     class S1070
     {
+        private eSocial eSocialEvt = new eSocial();
         private eSocialEvtTabProcesso evtTabProcesso = new eSocialEvtTabProcesso();
         private T_ideEvento_evtTab t_ideEvento = new T_ideEvento_evtTab();
         private T_ideEmpregador t_ideEmpregador = new T_ideEmpregador();
@@ -33,6 +34,9 @@ namespace BibliotecaEsocial.Eventos.S1070
 
         public void s1070()
         {
+            this.eSocialEvt = this.eSocialEvt;
+            this.eSocialEvt.evtTabProcesso = this.evtTabProcesso;
+
             this.evtTabProcesso.Id = this.id;
             this.evtTabProcesso.ideEvento = this.t_ideEvento;
             this.evtTabProcesso.ideEmpregador = this.t_ideEmpregador;

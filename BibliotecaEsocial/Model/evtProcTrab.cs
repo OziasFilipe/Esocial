@@ -297,10 +297,12 @@ public partial class eSocialEvtProcTrabInfoProcesso {
 public partial class eSocialEvtProcTrabInfoProcessoDadosCompl {
     
     private object itemField;
-    
+    private object InfoCCP;
+    private object InfoProcJud;
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("infoCCP", typeof(eSocialEvtProcTrabInfoProcessoDadosComplInfoCCP))]
-    [System.Xml.Serialization.XmlElementAttribute("infoProcJud", typeof(eSocialEvtProcTrabInfoProcessoDadosComplInfoProcJud))]
+        [System.Xml.Serialization.XmlElementAttribute("myInfoCCP", typeof(eSocialEvtProcTrabInfoProcessoDadosComplInfoCCP))]
+    [System.Xml.Serialization.XmlElementAttribute("myInfoProcJud", typeof(eSocialEvtProcTrabInfoProcessoDadosComplInfoProcJud))]
     public object Item {
         get {
             return this.itemField;
@@ -309,7 +311,29 @@ public partial class eSocialEvtProcTrabInfoProcessoDadosCompl {
             this.itemField = value;
         }
     }
-}
+    public object infoCCP
+        {
+        get
+        {
+            return this.InfoCCP;
+        }
+        set
+        {
+            this.InfoCCP = value;
+        }
+    }
+    public object infoProcJud
+        {
+        get
+        {
+            return this.InfoProcJud;
+        }
+        set
+        {
+            this.InfoProcJud = value;
+        }
+    }
+    }
 
 
 public partial class eSocialEvtProcTrabInfoProcessoDadosComplInfoCCP {
