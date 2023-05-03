@@ -50,6 +50,7 @@
     <Compile Include="Eventos\S1020\S1020.cs" />
     <Compile Include="Eventos\S1070\S1070.cs" />
     <Compile Include="Eventos\S1200\S1200.cs" />
+    <Compile Include="Eventos\S1202\S1202.cs" />
     <Compile Include="Eventos\S1210\S1210.cs" />
     <Compile Include="Eventos\S1260\S1260.cs" />
     <Compile Include="Eventos\S1270\S1270.cs" />

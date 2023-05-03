@@ -29,6 +29,7 @@ namespace BibliotecaEsocial.Eventos.S1070
         private string nrInscProc = string.Empty;
         private string iniValid = string.Empty;
         private string fimValid = string.Empty;
+        private string codSusp = string.Empty;
         private sbyte tpInsc = 0;
         private sbyte tpProc = 0;
 
@@ -58,6 +59,9 @@ namespace BibliotecaEsocial.Eventos.S1070
             this.dadosProc.dadosProcJud = this.dadosProcJud;
             this.dadosProc.infoSusp = this.infoSusp;
 
+            this.infoSusp[0] = new T_dadosProcInfoSusp();
+            this.infoSusp[0].codSusp = this.codSusp;
+
             this.infoProcesso.alteracao = this.alteracao;
 
             this.alteracao.ideProcesso = this.ideProcesso;
@@ -68,8 +72,8 @@ namespace BibliotecaEsocial.Eventos.S1070
 
             this.exclusao.ideProcesso = this.ideProcesso;
 
-            XmlSerializer xml = new XmlSerializer(typeof(eSocialEvtTabProcesso));
-            xml.Serialize(Console.Out, evtTabProcesso);
+            XmlSerializer xml = new XmlSerializer(typeof(eSocial));
+            xml.Serialize(Console.Out, eSocialEvt);
             Console.Read();
         }
     }

@@ -5,6 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using BibliotecaEsocial.Model.S2300;
+using eSocial = BibliotecaEsocial.Model.S2300.eSocial;
+using T_contato = BibliotecaEsocial.Model.S2300.T_contato;
+using T_ideEmpregador = BibliotecaEsocial.Model.S2300.T_ideEmpregador;
+using T_nascimento = BibliotecaEsocial.Model.S2300.T_nascimento;
+using T_remuneracao = BibliotecaEsocial.Model.S2300.T_remuneracao;
 
 namespace BibliotecaEsocial.Eventos.S2300
 {
@@ -59,7 +64,7 @@ namespace BibliotecaEsocial.Eventos.S2300
 
         private eSocialEvtTSVInicioInfoTSVInicioTermino termino = new eSocialEvtTSVInicioInfoTSVInicioTermino();
 
-
+       
 
         private string id = string.Empty;
         private string nrInsc = string.Empty;
@@ -94,7 +99,6 @@ namespace BibliotecaEsocial.Eventos.S2300
             this.endereco.exterior = this.exterior;
             this.trabalhador.trabImig = this.trabImig;
             this.trabalhador.infoDeficiencia = this.infoDeficiencia;
-           // this.trabalhador.dependente = new eSocialEvtTSVInicioTrabalhadorDependente[];
             this.dependente[0] = new eSocialEvtTSVInicioTrabalhadorDependente();
             this.dependente[0].tpDep = this.tpDep;
             this.dependente[0].nmDep = this.nmDep;
@@ -128,11 +132,10 @@ namespace BibliotecaEsocial.Eventos.S2300
             this.infoTsvInicio.termino = this.termino;
 
 
+
             XmlSerializer xml = new XmlSerializer(typeof(eSocial));
             xml.Serialize(Console.Out, eSocialEvt);
             Console.ReadLine();
-
-
 
         }
     }

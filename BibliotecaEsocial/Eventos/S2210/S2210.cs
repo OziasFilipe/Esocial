@@ -11,6 +11,7 @@ namespace BibliotecaEsocial.Eventos.S2210
 {
     class S2210
     {
+        private eSocial eSocialEvt = new eSocial();
         private eSocialEvtCAT evtCAT = new eSocialEvtCAT();
         private eSocialEvtCATCat cat = new eSocialEvtCATCat();
         private T_ideEmpregador t_ideEmpregador = new T_ideEmpregador();
@@ -50,6 +51,8 @@ namespace BibliotecaEsocial.Eventos.S2210
 
         public void s2210()
         {
+            this.eSocialEvt = this.eSocialEvt;
+            this.eSocialEvt.evtCAT = this.evtCAT;
             this.evtCAT.Id = this.id;
             this.evtCAT.cat = this.cat;
             this.evtCAT.ideEmpregador = this.t_ideEmpregador;
@@ -70,12 +73,12 @@ namespace BibliotecaEsocial.Eventos.S2210
             this.cat.dtAcid = this.dtAcid;
             this.cat.dtObito = this.dtObito;
             this.cat.dtObitoSpecified = this.dtObitoSpecified;
-            this.cat.houveAfast = this.houveAfast;
+            this.cat.houveAfast = (Model.S2210.TS_sim_nao)this.houveAfast;
             this.cat.houveAfastSpecified = this.houveAfastSpecified;
             this.cat.hrAcid = this.hrAcid;
             this.cat.hrsTrabAntesAcid = this.hrsTrabAntesAcid;
-            this.cat.indCatObito = this.indCatObito;
-            this.cat.indComunPolicia = this.indComunPolicia;
+            this.cat.indCatObito = (Model.S2210.TS_sim_nao)this.indCatObito;
+            this.cat.indComunPolicia = (Model.S2210.TS_sim_nao)this.indComunPolicia;
             this.cat.iniciatCAT = this.iniciatCAT;
             this.cat.localAcidente = this.localAcidente;
             this.cat.obsCAT = this.obsCAT;
@@ -85,8 +88,8 @@ namespace BibliotecaEsocial.Eventos.S2210
 
             this.atestado.emitente = this.emitente;
 
-            XmlSerializer xml = new XmlSerializer(typeof(eSocialEvtCAT));
-            xml.Serialize(Console.Out, evtCAT);
+            XmlSerializer xml = new XmlSerializer(typeof(eSocial));
+            xml.Serialize(Console.Out, eSocialEvt);
             Console.Read();
         }
 

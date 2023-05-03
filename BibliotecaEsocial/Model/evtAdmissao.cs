@@ -1019,10 +1019,12 @@ public enum TS_grauInstr {
 public partial class eSocialEvtAdmissaoTrabalhadorEndereco {
     
     private object itemField;
-    
+    private object Brasil;
+    private object Exterior;
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("brasil", typeof(T_endereco_brasil))]
-    [System.Xml.Serialization.XmlElementAttribute("exterior", typeof(T_endereco_exterior))]
+        [System.Xml.Serialization.XmlElementAttribute("myBrasil", typeof(T_endereco_brasil))]
+    [System.Xml.Serialization.XmlElementAttribute("myExterior", typeof(T_endereco_exterior))]
     public object Item {
         get {
             return this.itemField;
@@ -1031,7 +1033,29 @@ public partial class eSocialEvtAdmissaoTrabalhadorEndereco {
             this.itemField = value;
         }
     }
-}
+    public object brasil
+        {
+        get
+        {
+            return this.Brasil;
+        }
+        set
+        {
+            this.Brasil = value;
+        }
+    }
+    public object exterior
+        {
+        get
+        {
+            return this.Exterior;
+        }
+        set
+        {
+            this.Exterior = value;
+        }
+    }
+    }
 
 
 public partial class eSocialEvtAdmissaoTrabalhadorTrabImig {
@@ -1463,10 +1487,12 @@ public enum eSocialEvtAdmissaoVinculoCadIni {
 public partial class eSocialEvtAdmissaoVinculoInfoRegimeTrab {
     
     private object itemField;
-    
+    private object InfoCeletista;
+    private object InfoEstatutario;
+
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("infoCeletista", typeof(eSocialEvtAdmissaoVinculoInfoRegimeTrabInfoCeletista))]
-    [System.Xml.Serialization.XmlElementAttribute("infoEstatutario", typeof(eSocialEvtAdmissaoVinculoInfoRegimeTrabInfoEstatutario))]
+        [System.Xml.Serialization.XmlElementAttribute("myInfoCeletista", typeof(eSocialEvtAdmissaoVinculoInfoRegimeTrabInfoCeletista))]
+    [System.Xml.Serialization.XmlElementAttribute("myInfoEstatutario", typeof(eSocialEvtAdmissaoVinculoInfoRegimeTrabInfoEstatutario))]
     public object Item {
         get {
             return this.itemField;
@@ -1475,7 +1501,29 @@ public partial class eSocialEvtAdmissaoVinculoInfoRegimeTrab {
             this.itemField = value;
         }
     }
-}
+    public object infoCeletista
+        {
+        get
+        {
+            return this.InfoCeletista;
+        }
+        set
+        {
+            this.InfoCeletista = value;
+        }
+    }
+    public object infoEstatutario
+        {
+        get
+        {
+            return this.InfoEstatutario;
+        }
+        set
+        {
+            this.InfoEstatutario = value;
+        }
+    }
+    }
 
 
 public partial class eSocialEvtAdmissaoVinculoInfoRegimeTrabInfoCeletista {

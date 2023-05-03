@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+
+using BibliotecaEsocial.Model.S1202;
 using System.Xml.Serialization;
 
 // 
@@ -485,7 +487,9 @@ public partial class eSocialEvtRmnRPPSDmDev {
     private string ideDmDevField;
     
     private string codCategField;
-    
+
+    private T_infoRRA infoRRAField;
+
     private eSocialEvtRmnRPPSDmDevIdeEstab[] infoPerApurField;
     
     private eSocialEvtRmnRPPSDmDevInfoPerAnt infoPerAntField;
@@ -510,9 +514,22 @@ public partial class eSocialEvtRmnRPPSDmDev {
             this.codCategField = value;
         }
     }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlArrayItemAttribute("ideEstab", IsNullable=false)]
+
+    //[System.Xml.Serialization.XmlElementAttribute("infoRRA", IsNullable = false)]
+        public T_infoRRA infoRRA
+    {
+        get
+        {
+            return this.infoRRAField;
+        }
+        set
+        {
+            this.infoRRAField = value;
+        }
+    }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("ideEstab", IsNullable=false)]
     public eSocialEvtRmnRPPSDmDevIdeEstab[] infoPerApur {
         get {
             return this.infoPerApurField;
@@ -574,8 +591,197 @@ public partial class eSocialEvtRmnRPPSDmDevIdeEstab {
     }
 }
 
+public partial class T_infoRRADespProcJud
+{
 
-public partial class eSocialEvtRmnRPPSDmDevInfoPerAnt {
+    private decimal vlrDespCustasField;
+
+    private decimal vlrDespAdvogadosField;
+
+    /// <remarks/>
+    public decimal vlrDespCustas
+    {
+        get
+        {
+            return this.vlrDespCustasField;
+        }
+        set
+        {
+            this.vlrDespCustasField = value;
+        }
+    }
+
+    /// <remarks/>
+    public decimal vlrDespAdvogados
+    {
+        get
+        {
+            return this.vlrDespAdvogadosField;
+        }
+        set
+        {
+            this.vlrDespAdvogadosField = value;
+        }
+    }
+}
+
+
+public partial class T_infoRRAIdeAdv
+{
+
+    private sbyte tpInscField;
+
+    private string nrInscField;
+
+    private decimal vlrAdvField;
+
+    private bool vlrAdvFieldSpecified;
+
+    /// <remarks/>
+    public sbyte tpInsc
+    {
+        get
+        {
+            return this.tpInscField;
+        }
+        set
+        {
+            this.tpInscField = value;
+        }
+    }
+
+    /// <remarks/>
+    public string nrInsc
+    {
+        get
+        {
+            return this.nrInscField;
+        }
+        set
+        {
+            this.nrInscField = value;
+        }
+    }
+
+    /// <remarks/>
+    public decimal vlrAdv
+    {
+        get
+        {
+            return this.vlrAdvField;
+        }
+        set
+        {
+            this.vlrAdvField = value;
+        }
+    }
+
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    public bool vlrAdvSpecified
+    {
+        get
+        {
+            return this.vlrAdvFieldSpecified;
+        }
+        set
+        {
+            this.vlrAdvFieldSpecified = value;
+        }
+    }
+}
+
+
+    public partial class T_infoRRA
+{
+
+    private sbyte tpProcRRAField;
+
+    private string nrProcRRAField;
+
+    private string descRRAField;
+
+    private decimal qtdMesesRRAField;
+
+    private T_infoRRADespProcJud despProcJudField;
+
+    private T_infoRRAIdeAdv[] ideAdvField;
+
+        /// <remarks/>
+        public sbyte tpProcRRA
+    {
+        get
+        {
+            return this.tpProcRRAField;
+        }
+        set
+        {
+            this.tpProcRRAField = value;
+        }
+    }
+
+    /// <remarks/>
+    public string nrProcRRA
+    {
+        get
+        {
+            return this.nrProcRRAField;
+        }
+        set
+        {
+            this.nrProcRRAField = value;
+        }
+    }
+
+    /// <remarks/>
+    public string descRRA
+    {
+        get { return this.descRRAField; }
+        set { this.descRRAField = value; }
+    }
+
+    public T_infoRRADespProcJud despProcJud
+        {
+            get
+            {
+                return this.despProcJudField;
+            }
+            set
+            {
+                this.despProcJudField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ideAdv")]
+        public T_infoRRAIdeAdv[] ideAdv
+        {
+            get
+            {
+                return this.ideAdvField;
+            }
+            set
+            {
+                this.ideAdvField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    /*public decimal qtdMesesRRA
+    {
+        get
+        {
+            return this.qtdMesesRRAField;
+        }
+        set
+        {
+            this.qtdMesesRRAField = value;
+        } */
+    }
+
+
+    public partial class eSocialEvtRmnRPPSDmDevInfoPerAnt {
     
     private TS_sim_nao remunOrgSucField;
     
@@ -648,9 +854,10 @@ public partial class eSocialEvtRmnRPPSDmDevInfoPerAntIdePeriodoIdeEstab {
     private sbyte tpInscField;
     
     private string nrInscField;
-    
-    private T_remunPer[] remunPerAntField;
-    
+
+    private T_remunPer[] remunPerApurField;
+
+
     /// <remarks/>
     public sbyte tpInsc {
         get {
@@ -675,11 +882,10 @@ public partial class eSocialEvtRmnRPPSDmDevInfoPerAntIdePeriodoIdeEstab {
     [System.Xml.Serialization.XmlElementAttribute("remunPerAnt")]
     public T_remunPer[] remunPerAnt {
         get {
-            return this.remunPerAntField;
+            return this.remunPerApurField;
         }
         set {
-            this.remunPerAntField = value;
+            this.remunPerApurField = value;
         }
     }
-}
 }

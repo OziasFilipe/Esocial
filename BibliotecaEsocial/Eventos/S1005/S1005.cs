@@ -99,8 +99,8 @@ namespace BibliotecaEsocial.Eventos.S1005
             this.t_ideEvento_evtTab_inicial.tpAmb = this.tpAmb;
             this.t_ideEvento_evtTab_inicial.verProc = this.verProc;
 
-           XmlSerializer xmlSerializer = new XmlSerializer(typeof(eSocialEvtTabEstab));
-           xmlSerializer.Serialize(Console.Out, evtTabEstab);
+           XmlSerializer xmlSerializer = new XmlSerializer(typeof(eSocial));
+           xmlSerializer.Serialize(Console.Out, eSocialEvt);
            Console.ReadLine();
         }
 

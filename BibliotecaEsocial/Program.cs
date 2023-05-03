@@ -11,6 +11,7 @@ using BibliotecaEsocial.Eventos.S1005;
 using BibliotecaEsocial.Eventos.S1010;
 using BibliotecaEsocial.Eventos.S1020;
 using BibliotecaEsocial.Eventos.S1070;
+using BibliotecaEsocial.Eventos.S1202;
 using BibliotecaEsocial.Eventos.S1260;
 using BibliotecaEsocial.Eventos.S1270;
 using BibliotecaEsocial.Eventos.S1280;
@@ -55,8 +56,8 @@ namespace BibliotecaEsocial
         static void Main(string[] args)
         {
 
-            S1070 teste = new S1070();
-            teste.s1070();
+            S2210 teste = new S2210();
+            teste.s2210();
 
         }
     }

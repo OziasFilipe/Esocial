@@ -92,8 +92,8 @@ namespace BibliotecaEsocial.Eventos.S1010
             this.exclusao.ideRubrica = this.ideRubrica;
             
 
-            XmlSerializer xml = new XmlSerializer(typeof(eSocialEvtTabRubrica));
-            xml.Serialize(Console.Out, evtTabRubrica);
+            XmlSerializer xml = new XmlSerializer(typeof(eSocial));
+            xml.Serialize(Console.Out, eSocialEvt);
             Console.ReadLine();
         }
 

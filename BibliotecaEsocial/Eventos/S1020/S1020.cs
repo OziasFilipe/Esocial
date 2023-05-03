@@ -79,8 +79,8 @@ namespace BibliotecaEsocial.Eventos.S1020
             this.infoLotacao.exclusao = this.exclusao;
             this.exclusao.ideLotacao = this.ideLotacao;
 
-            XmlSerializer xml = new XmlSerializer(typeof(eSocialEvtTabLotacao));
-            xml.Serialize(Console.Out, evtTabLotacao);
+            XmlSerializer xml = new XmlSerializer(typeof(eSocial));
+            xml.Serialize(Console.Out, eSocialEvt);
             Console.Read();
 
         }
